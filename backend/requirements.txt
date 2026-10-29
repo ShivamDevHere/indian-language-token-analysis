@@ -1,0 +1,5 @@
+# TODO: pin versions when the backend is implemented
+flask
+flask-cors
+python-dotenv
+requests

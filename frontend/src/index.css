@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-slate-50 text-slate-800 antialiased; }
+
+/* Visible keyboard focus everywhere */
+:focus-visible { outline: 2px solid #14b8a6; outline-offset: 2px; }
+
+/* ---- Dark theme ----
+   Settings > Preferred theme adds the `theme-dark` class to the app root.
+   Instead of adding dark: variants everywhere, we remap the few neutral
+   colors the app uses. Edit these values to restyle dark mode. */
+.theme-dark { background: #0a1128; color: #e2e8f0; }
+.theme-dark .bg-white { background-color: #121b3a; }
+.theme-dark .bg-slate-50 { background-color: #0d1530; }
+.theme-dark .bg-slate-100 { background-color: #1a2447; }
+.theme-dark .hover\:bg-slate-50:hover { background-color: #18234a; }
+.theme-dark .hover\:bg-slate-100:hover { background-color: #202c58; }
+.theme-dark .border-slate-200, .theme-dark .border-slate-100 { border-color: #26325c; }
+.theme-dark .divide-slate-100 > :not([hidden]) ~ :not([hidden]) { border-color: #26325c; }
+.theme-dark .text-slate-900, .theme-dark .text-slate-800, .theme-dark .text-slate-700 { color: #f1f5f9; }
+.theme-dark .text-slate-600, .theme-dark .text-slate-500 { color: #9fb0cc; }
+.theme-dark input, .theme-dark select, .theme-dark textarea { background-color: #0d1530; color: #e2e8f0; }
